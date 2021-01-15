@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body> <button type="button" onclick="clickThis()">Choi</button>;
+<script>
+    function clickThis(){
+        let a = parseInt(prompt("chon khoang so muon"));
+        let x = Math.floor(Math.random()*(a-1));
+        let y = parseInt(prompt("chon so muon doan"));
+        for(i=0;i<3;i++){
+            if (x==y) {
+                alert("ban da chien thang ");
+                break
+            } else if ( x>y) {
+                alert("so ban chon nho hon");
+                y = parseInt(prompt("nhap lai"));
+            } else {
+                alert("so ban chon lon hon");
+                y = parseInt(prompt("nhap lai"))
+            }
+        }
+    }
+</script>
+</body>
+</html>

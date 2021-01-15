@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body> <p id="hienthi"></p>
+<script>
+    let count = 20;
+    let a = 0;
+    let b = 1;
+    let c;
+    for (i=0;i<count;i++){
+        c = a + b;
+        a = b;
+        b = c;
+        if (a%5==0){
+            document.getElementById('hienthi').innerHTML += a +'<br/>'
+            break;
+        }
+    }
+</script>
+
+</body>
+</html>
